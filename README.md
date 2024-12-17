@@ -13,8 +13,6 @@ This Bus Booking System is a web application that allows users to book bus ticke
 
 ## File Structure
 
-## File Structure
-
 The `/bookmytrip` directory contains the application's files organized as follows:
 
 **Directories:**
