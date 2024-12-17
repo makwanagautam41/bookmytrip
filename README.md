@@ -53,7 +53,7 @@ The `/bookmytrip` directory contains the application's files organized as follow
 1. **Clone the repository**:
    ```bash
    git clone <repository-url>
-   cd bus_booking
+   cd bookmytip
    ```
 
 2. **Set up the database**:
