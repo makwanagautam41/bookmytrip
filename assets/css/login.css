@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.login-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* color: #dc143c; */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #dc143c;
+    outline: none;
+}
+
+.google-signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4285F4;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.google-signin i {
+    margin-right: 8px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-forgot a {
+    color: #dc143c;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.signin-btn {
+    background-color: #dc143c;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.success{
+    color: green;
+}
+
+.error{
+    color: red;
+}
+
+.signin-btn:hover {
+    background-color: #333;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #dc143c;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.image-section {
+    flex: 1;
+    /* background-color: #dc143c; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.promo-text {
+    margin-top: 20px;
+}
+
+.promo-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.promo-text p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 50px 0px;
+    }
+
+    .container {
+        flex-direction: column;
+        /* margin: 50px; */
+        width: 100%;
+    }
+
+    .image-section {
+        order: -1;
+        padding: 10px;
+    }
+
+    .login-section {
+        padding: 20px;
+    }
+
+    .img img{
+        display: none;
+    }
+}
+
+.img img{
+    height: 100%;
+    width: 100%;
+    position: absolute;  
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.price-summary {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary-header {
+  display: flex;
+  align-items: center;
+  background-color: #dc143c;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.summary-header i {
+  margin-right: 8px;
+}
+
+.summary-content {
+  padding: 16px 0;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.summary-item span.confirmed {
+  color: #32cd32;
+}
+
+.divider {
+  border-top: 1px solid #555;
+  margin: 10px 0;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #dc143c;
+  border-top: 1px solid #777;
+  padding-top: 12px;
+  font-size: 16px;
+}
+
+.print-button {
+  width: auto;
+  padding: 12px 30px;
+  background-color: #28a745;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.print-button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 480px) {
+  .price-summary {
+    width: 90%;
+  }
+  .summary-header {
+    font-size: 16px;
+  }
+
+  .summary-item {
+    font-size: 12px;
+  }
+
+  .summary-total {
+    font-size: 14px;
+  }
+  .print-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+
+/* review card */
+
+h2 {
+  text-align: center;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

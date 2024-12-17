@@ -1,0 +1,207 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+.bus-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.info-block {
+  text-align: center;
+  flex: 1;
+  min-width: 100px;
+}
+
+.info-title {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.info-value {
+  font-size: 18px;
+  color: #dc143c;
+  font-weight: bold;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.divider i {
+  font-size: 16px;
+}
+
+.info-block:hover .info-value {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.divider:hover {
+  box-shadow: 0 0 10px #dc143c;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.seat-selection {
+  padding: 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #dc143c;
+  margin-bottom: 20px;
+}
+
+.deck-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.deck {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.deck-title {
+  font-size: 20px;
+  color: #dc143c;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.driver-icon {
+  font-size: 24px;
+  color: #dc143c;
+  grid-column: span 4;
+  text-align: center;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid #dc143c;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.seat.booked {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.seat.selected {
+  background-color: #32cd32;
+}
+
+.seat:hover {
+  transform: scale(1.1);
+}
+
+form input {
+  visibility: hidden;
+}
+
+.confirm-booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.btn-confirm {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 12px 30px;
+  border: 2px solid #dc143c;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-confirm:hover {
+  background-color: #dc143c;
+  color: white;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .btn-confirm {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn-confirm {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+}
+
+.back-link {
+  text-align: center;
+  padding: 20px;
+}
+
+.link-back {
+  color: #dc143c;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.link-back:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .link-back {
+    font-size: 14px;
+  }
+}

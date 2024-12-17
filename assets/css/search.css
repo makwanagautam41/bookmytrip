@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.hero-section {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://t3.ftcdn.net/jpg/10/67/87/24/360_F_1067872494_TeypB2QHNm8TIPSMv5K12lophFEIJzX7.jpg') no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 60px;
+  border-radius: 10px;
+  max-width: 800px;
+  text-align: center;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 10rem;
+  top: 0;
+}
+
+.overlay h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.input-group i {
+  color: #888;
+  margin-right: 10px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.date-buttons button {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.date-buttons button:hover {
+  background: #d00e21;
+}
+
+.search-btn {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #0469d6;
+}
+
+.bus-details {
+  padding: 40px 20px;
+  background: #f1f1f1;
+}
+
+.bus-details h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bus-card {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 1fr;
+  gap: 20px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.bus-card:hover {
+  transform: translateY(-5px);
+}
+
+.bus-info h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.badge {
+  background: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.timing-info div {
+  text-align: center;
+}
+
+.timing-info span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.timing-info p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.additional-info {
+  text-align: center;
+}
+
+.additional-info .rating {
+  font-size: 1rem;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.price-info {
+  text-align: right;
+}
+
+.price-info .current-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.seats-btn {
+  background: #28a745;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.seats-btn:hover {
+  background: #218838;
+}
+
+.facilities {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.facility-card {
+  text-align: center;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.facility-card .icon-container {
+  font-size: 2rem;
+  color: #dc3545;
+  margin-bottom: 10px;
+}
+
+.facility-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.note {
+  position: absolute;
+  bottom: 15rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .bus-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .bus-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .price-info {
+    text-align: center;
+  }
+
+  .facilities {
+    flex-direction: column;
+  }
+
+  .timing-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rotate {
+    transform: rotate(270deg);
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay {
+    padding: 20px;
+  }
+
+  .bus-info h2 {
+    font-size: 1rem;
+  }
+
+  .facility-card {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+
+/* snackbar */
+#snackbar{
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -150px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 20px;
+  font-size: 17px;
+  padding: 16px 16px 16px 40px; 
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: slidein 0.5s, slideout 0.5s 2.5s;
+  animation: slidein 0.5s, slideout 0.5s 2.5s;
+}
+
+@keyframes slidein {
+  from {
+    left: -300px; 
+    opacity: 0;
+  }
+  to {
+    left: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideout {
+  from {
+    left: 50%; 
+    opacity: 1;
+  }
+  to {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+/* loader */
+#loader {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-content {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #d00e21;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: -75px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
