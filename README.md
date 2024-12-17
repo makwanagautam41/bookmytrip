@@ -67,7 +67,7 @@ The `/bookmytrip` directory contains the application's files organized as follow
 
 4. **For admin panel and access**:
     - The login form of user is also for admins means the login page is multi user login page
-    - use email : admin@gmai.com
+    - use email : admin@gmail.com
     - password : admin
 
 ## Usage
