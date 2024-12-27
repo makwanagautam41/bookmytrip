@@ -52,7 +52,7 @@ The `/bookmytrip` directory contains the application's files organized as follow
 ## Installation
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/makwanagautam41/bookmytrip.git
    cd bookmytip
    ```
 
