@@ -83,3 +83,7 @@ The `/bookmytrip` directory contains the application's files organized as follow
 - HTML/CSS
 - JavaScript
 - SVG for icons
+
+
+## Collabrator
+2. Gautam Makwana
