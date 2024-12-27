@@ -87,3 +87,9 @@ The `/bookmytrip` directory contains the application's files organized as follow
 
 ## Collabrator
 2. Gautam Makwana
+   - Linkedin : https://www.linkedin.com/in/gautammakwana/
+   - Github : https://github.com/makwanagautam41/
+
+3. Dhruvraj Zala
+   - Linkedin :
+   - Github :    
